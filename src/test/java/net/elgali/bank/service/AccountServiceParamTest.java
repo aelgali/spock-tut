@@ -54,7 +54,7 @@ public class AccountServiceParamTest {
         accountB.setNumber("ABC222222222");
     }
     @Test
-    public void transferMoney() {
+    public void transferMoney() throws InsufficientFundException {
         accountA.setBalance(accountABalance);
         accountB.setBalance(accountBBalance);
         accountService.transferBalance(accountA, accountB, amount);

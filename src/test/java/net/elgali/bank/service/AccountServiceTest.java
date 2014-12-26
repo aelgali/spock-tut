@@ -33,7 +33,7 @@ public class AccountServiceTest {
     }
 
     @Test
-    public void transferBalance() {
+    public void transferBalance() throws InsufficientFundException {
         accountA.setBalance(new BigDecimal(100.00));
         accountB.setBalance(new BigDecimal(150.00));
 
